@@ -1,0 +1,39 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Christine's personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d -w",
+    "start": "nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christine-ting/personal-website.git"
+  },
+  "author": "Christine Ting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christine-ting/personal-website/issues"
+  },
+  "homepage": "https://github.com/christine-ting/personal-website#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "path": "^0.12.7",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "eslint-config-hackreactor": "github:reactorcore/eslint-config-hackreactor"
+  }
+}
