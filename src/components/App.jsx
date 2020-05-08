@@ -4,6 +4,7 @@ import Paint from './Paint';
 import About from './About';
 import Work from './Work';
 import Resume from './Resume';
+import Contact from './Contact';
 
 const App = () => {
   const [ filter, changeFilter ] = useState('brightness(100%) grayscale(1)');
@@ -38,6 +39,7 @@ const App = () => {
       </div>
       <Work />
       <Resume />
+      <Contact />
     </div>
   );
 };
