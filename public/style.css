@@ -214,7 +214,7 @@ table {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 2px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .profile-pic {
@@ -264,10 +264,13 @@ table {
 
 .resume {
   background-color: rgb(176, 176, 176);
-  padding: 100px 0px 100px 0px;
+  padding: 150px 0px 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
 }
 
 .resume-details {
@@ -278,12 +281,13 @@ table {
   width: 50vw;
 }
 
-.education-title {
+.education-title, .skills-title, .applications-title, .experience-title, .others-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 2px;
-  padding: 0px 50px 100px 50px;
+  padding-top: 50px;
+  /* padding: 0px 50px 100px 50px; */
 }
 
 hr {
@@ -292,4 +296,53 @@ hr {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.education, .skills, .applications, .experience, .others {
+  padding: 0px 10px 0px 10px;
+}
+
+.berkeley, .lse {
+
+}
+
+#berkeley-title, #lse-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+  font-weight: 400;
+}
+
+#berkeley-details, #lse-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+
+.skills, .applications, .experience, .others {
+  line-height: 30px;
+}
+
+.my-app, .job {
+  padding-bottom: 20px;
+}
+
+.app-title, .role-duration, .job-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-summary, .role-duration {
+  font-style: italic;
+}
+
+.app-details, .job-details {
+  padding: 10px 5px 0px 5px;
+}
+
+.roles {
+  line-height: 25px;
 }
