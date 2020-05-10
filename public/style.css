@@ -58,10 +58,6 @@ table {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* -webkit-filter: brightness(100%) grayscale(1);
-  -moz-filter: brightness(100%) grayscale(1);
-  -o-filter: brightness(100%) grayscale(1);
-  filter: brightness(100%) grayscale(1); */
   animation-name: photo;
   animation-duration: 5s;
 }
@@ -90,12 +86,11 @@ table {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
   transform: translate(-50%,-50%); 
 }
 
 #name {
-  font-size: 3vw;
+  /* font-size: 80px; */
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
@@ -123,6 +118,7 @@ table {
   font-weight: 300;
   color: rgb(228, 151, 56);
   transform: translate(-50%,-50%); 
+  align-items: center;
 }
 
 #tab {
@@ -135,7 +131,6 @@ table {
 }
 
 .icons {
-  /* background-color: black; */
   height: 100vh;
   position: absolute;
   top: 0;
@@ -366,19 +361,19 @@ hr {
   padding: 50px 0px 20px 0px;
 }
 
-#name {
+#name-input {
   width: 30vw;
   font-size: 15px;
   padding: 5px;
 }
 
-#email {
+#email-input {
   width: 30vw;
   font-size: 15px;
   padding: 5px;
 }
 
-#message {
+#message-input {
   width: 30vw;
   font-size: 15px;
   padding: 5px;
