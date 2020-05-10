@@ -17,7 +17,10 @@ const App = () => {
   const [roleFontSize, setRoleFontSize] = useState(20);
   const [tabsFontSize, setTabsFontSize] = useState(17);
   const [tabsFlex, setTabsFlex] = useState('row');
+  const [aboutFlex, setAboutFlex] = useState('row');
   const [renderIcons, setIconsView] = useState(true);
+  const [workSize, setWorkSize] = useState(1300);
+
 
   const checkToResize = () => {
     setNameFontSize(80);
@@ -25,13 +28,19 @@ const App = () => {
     setTabsFontSize(17);
     setIconsView(true);
     setTabsFlex('row');
+    setAboutFlex('row');
+    setWorkSize(1500);
     if (window.innerWidth < 1150) {
       setNameFontSize(50);
       setRoleFontSize(20);
       setTabsFlex('column');
     }
+    if (window.innerWidth < 1380) {
+      setWorkSize(window.innerWidth - 10);
+    }
     if (window.innerWidth < 1464) {
       setTabsFontSize(13);
+      setAboutFlex('column');
     }
     if (window.innerWidth < 800) {
       setNameFontSize(25);
@@ -40,7 +49,7 @@ const App = () => {
     } 
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     checkToResize();
     const handleResize = () => {
       setDimensions({
@@ -84,9 +93,9 @@ const App = () => {
       { renderIcons && <Icons /> }
       <Paint clickToChangeFilter={clickToChangeFilter} color={color} />
       <div className='main-info'>
-        <About />
+        <About aboutFlex={aboutFlex}/>
       </div>
-      <Work />
+      <Work workSize={workSize} tabsFontSize={tabsFontSize}/>
       <Resume />
       <Contact />
     </div>

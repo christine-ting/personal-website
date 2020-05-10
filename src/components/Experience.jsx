@@ -3,7 +3,7 @@ const Experience = () => (
   <div className="experience">
     <div className="job">
       <div className="job-title" style={{fontWeight: 400}}>
-        Hack Reactor / Los Angeles, CA
+        Hack Reactor/Galvanize | Los Angeles, CA
       </div>
       <div className="role-duration">
         <div>
@@ -27,7 +27,7 @@ const Experience = () => (
     </div>
     <div className="job">
       <div className="job-title" style={{fontWeight: 400}}>
-        Calhome Inc., D.B.A., T-Motorsports / Pomona, CA
+        Calhome Inc., D.B.A., T-Motorsports | Pomona, CA
       </div>
       <div className="roles">
         <div className="role-duration">
@@ -61,7 +61,7 @@ const Experience = () => (
     </div>
     <div className="job">
       <div className="job-title" style={{fontWeight: 400}}>
-        Buy4easy Inc. / Pomona, CA
+        Buy4easy Inc. | Pomona, CA
       </div>
       <div className="role-duration">
         <div>

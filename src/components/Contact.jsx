@@ -10,13 +10,13 @@ const Contact = () => (
     </div>
     <div className="contact-form">
       <div id="input">
-        <input id="email" type="text" name="name" placeholder="Name"/>
+        <input id="name-input" type="text" name="name" placeholder="Name"/>
       </div>
       <div id="input">
-        <input id="email" type="text" name="email" placeholder="E-mail address"/>
+        <input id="email-input" type="text" name="email" placeholder="E-mail address"/>
       </div>
       <div id="input">
-        <input id="message" type="text" name="message" placeholder="Your message"/>
+        <input id="message-input" type="text" name="message" placeholder="Your message"/>
       </div>
       <button className="send-btn">SEND</button>
     </div>

@@ -213,22 +213,24 @@ table {
 }
 
 .profile-pic {
-  width: 12vw;
+  width: 300px;
 }
 
 .about-details {
   display: flex;
   flex-direction: row;
   font-family: 'Open Sans', sans-serif;  
-  font-size: 18px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
-  padding: 10px 20px 10px 20px;
-  width: 24vw;
+  padding: 0px 20px 10px 20px;
+  width: 350px;
 }
 
 .work {
@@ -240,14 +242,14 @@ table {
 }
 
 .gym-app-img {
-  width: 50vw;
+  width: 1300px;
 }
 
 .app-description {
   font-family: 'Open Sans', sans-serif;  
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
-  width: 50vw;
+  width: 1300px;
   letter-spacing: 0.5px;
   line-height: 25px;
   background-color: rgb(236, 236, 236);
