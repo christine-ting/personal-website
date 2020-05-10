@@ -20,6 +20,9 @@ const App = () => {
   const [aboutFlex, setAboutFlex] = useState('row');
   const [renderIcons, setIconsView] = useState(true);
   const [workSize, setWorkSize] = useState(1300);
+  const [workFontSize, setWorkFontSize] = useState(18);
+  const [resumeSize, setResumeSize] = useState(1300);
+  const [resumeFontSize, setResumeFontSize] = useState(17);
 
 
   const checkToResize = () => {
@@ -30,6 +33,9 @@ const App = () => {
     setTabsFlex('row');
     setAboutFlex('row');
     setWorkSize(1500);
+    setResumeSize(1200);
+    setResumeFontSize(17);
+    setWorkFontSize(18);
     if (window.innerWidth < 1150) {
       setNameFontSize(50);
       setRoleFontSize(20);
@@ -37,6 +43,7 @@ const App = () => {
     }
     if (window.innerWidth < 1380) {
       setWorkSize(window.innerWidth - 10);
+      setResumeSize(window.innerWidth - 30);
     }
     if (window.innerWidth < 1464) {
       setTabsFontSize(13);
@@ -46,7 +53,11 @@ const App = () => {
       setNameFontSize(25);
       setRoleFontSize(10);
       setIconsView(false);
+      setResumeFontSize(13);
     } 
+    if (window.innerWidth < 500) {
+      setWorkFontSize(10);
+    }
   };
 
   useEffect(() => {
@@ -95,8 +106,8 @@ const App = () => {
       <div className='main-info'>
         <About aboutFlex={aboutFlex}/>
       </div>
-      <Work workSize={workSize} tabsFontSize={tabsFontSize}/>
-      <Resume />
+      <Work workSize={workSize} workFontSize={workFontSize}/>
+      <Resume resumeSize={resumeSize} resumeFontSize={resumeFontSize}/>
       <Contact />
     </div>
   );

@@ -5,13 +5,13 @@ import Applications from './Applications';
 import Experience from './Experience';
 import Others from './Others';
 
-const Resume = () => {
+const Resume = ({ resumeSize, resumeFontSize }) => {
   return (
     <div className="resume">
       <div className="resume-title">
         RESUME
       </div>
-      <div className="resume-details">
+      <div className="resume-details" style={{width: resumeSize, fontSize: resumeFontSize}}>
         <div className="education-title">
           EDUCATION
           <hr/>

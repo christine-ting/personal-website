@@ -251,7 +251,7 @@ table {
   -webkit-font-smoothing: antialiased;
   width: 1300px;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 22px;
   background-color: rgb(236, 236, 236);
   padding: 30px 25px 30px 25px;
   box-sizing: border-box;
@@ -275,7 +275,7 @@ table {
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
-  width: 50vw;
+  width: 1200px;
 }
 
 .education-title, .skills-title, .applications-title, .experience-title, .others-title {
