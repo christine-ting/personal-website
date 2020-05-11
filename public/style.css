@@ -360,33 +360,36 @@ hr {
   font-weight: 400;
 }
 
+.contact-message {
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  line-height: 25px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 0px 20px 0px;
+  width: 1200px;
 }
 
-#name-input {
-  width: 30vw;
+#name-input, #email-input, #message-input {
+  width: 50%;
   font-size: 15px;
-  padding: 5px;
-}
-
-#email-input {
-  width: 30vw;
-  font-size: 15px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border:none;
 }
 
 #message-input {
-  width: 30vw;
-  font-size: 15px;
-  padding: 5px;
+  resize: none;
 }
 
-#input {
-  padding-top: 10px;
+.contact-form div {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .send-btn {

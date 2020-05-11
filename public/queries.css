@@ -90,6 +90,9 @@
     display: flex;
     flex-direction: column;
   }
+  .contact-form, #name-input, #email-input, #message-input {
+    width: 90%;
+  }
 }
 
 /* Small phones: from 0 to 480px */
