@@ -83,9 +83,10 @@
     font-size: 14px;
     line-height: 20px;
   }
-  .about-title, .work-title, .resume-title, .contact-title {
+  .about-title, .work-title, .contact-title {
     padding-bottom: 50px;
   }
+
   .app-title, .role-duration, .job-title {
     display: flex;
     flex-direction: column;
@@ -119,6 +120,9 @@
   .education-title, .skills-title, .applications-title, .experience-title, .others-title {
     font-size: 12px;
     padding-top: 20px;
+  }
+  .resume-title {
+    padding-bottom: 30px;
   }
   hr {
     margin-top: 8px;
