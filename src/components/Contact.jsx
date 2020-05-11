@@ -7,10 +7,19 @@ const Contact = () => {
     setInput(input => ({...input, [event.target.name]: event.target.value}))
   }
   const sendMessage = () => {
-    axios.post('/api/form', input)
-         .then(() => console.log('message sent!'))
-         .catch((err) => console.error(err));
-    setInput({ name: '', email: '', message: '' });
+    if (input.name !== '' && input.email !== '' && input.message !== '') {
+      axios.post('/api/form', input)
+           .then(() => alert('Thank you for your message, I will reply to you soon!'))
+           .catch((err) => console.error(err));
+      setInput({ name: '', email: '', message: '' });
+    } else {
+      for (var key in input) {
+        if (input[key] === '') {
+          alert(`Please fill out ${key} field!`)
+          break;
+        }
+      }
+    }
   }
   
   return (
