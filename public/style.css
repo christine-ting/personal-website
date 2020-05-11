@@ -118,7 +118,7 @@ table {
   font-family: 'Roboto', sans-serif;
   padding: 10px 10px 10px 10px;
   justify-content: space-evenly;
-  width: 25vw;
+  width: 550px;
   font-weight: 300;
   color: rgb(228, 151, 56);
   transform: translate(-50%,-50%); 
@@ -251,14 +251,14 @@ table {
 }
 
 .gym-app-img {
-  width: 50%;
+  width: 1200px;
 }
 
 .app-description {
   font-family: 'Open Sans', sans-serif;  
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
-  width: 50%;
+  width: 1200px;
   letter-spacing: 0.5px;
   line-height: 22px;
   background-color: rgb(236, 236, 236);

@@ -1,8 +1,5 @@
 @media only screen and (max-width: 1700px) {
-  .gym-app-img, .app-description {
-    width: 80%;
-  }
-  .resume-details {
+  .resume-details, .gym-app-img, .app-description {
     width: 80%;
   }
 }
@@ -17,9 +14,9 @@
   }
   #tabs {
     font-size: 15px;
-    width: 40vw;
+    width: 400px;
   }
-  .resume-details {
+  .resume-details, .gym-app-img, .app-description {
     width: 85%;
   }
   .education, .skills, .applications, .experience, .others {
@@ -31,9 +28,6 @@
 @media only screen and (max-width: 1023px) {
   .icons {
     width: 4vw;
-  }
-  .gym-app-img, .app-description {
-    width: 95%;
   }
   .app-description {
     font-size: 13px;
@@ -51,7 +45,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .resume-details {
+  .resume-details, .gym-app-img, .app-description {
     width: 95%;
   }
   .resume {
@@ -69,7 +63,7 @@
   }
   #tabs {
     font-size: 13px;
-    width: 70vw;
+    width: 65%
   }
   .icons {
     width: 5vw;
@@ -127,9 +121,6 @@
   hr {
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-  .resume-details {
-    width: 95%;
   }
   #berkeley-title, #lse-title {
     padding: 5px 0px 5px 0px;
