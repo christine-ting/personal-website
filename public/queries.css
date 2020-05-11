@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1700px) {
+  .gym-app-img, .app-description {
+    width: 80%;
+  }
+  .resume-details {
+    width: 80%;
+  }
+}
+
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
   #name {
@@ -10,12 +19,43 @@
     font-size: 15px;
     width: 40vw;
   }
+  .resume-details {
+    width: 85%;
+  }
+  .education, .skills, .applications, .experience, .others {
+    font-size: 15px;
+  }
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
   .icons {
     width: 4vw;
+  }
+  .gym-app-img, .app-description {
+    width: 95%;
+  }
+  .app-description {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 20px 15px 20px 15px;
+  }
+  .education, .skills, .applications, .experience, .others {
+    padding: 0px 5px 0px 5px;
+    font-size: 13px;
+  }
+  .education-title, .skills-title, .applications-title, .experience-title, .others-title {
+    font-size: 13px;
+  }
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .resume-details {
+    width: 95%;
+  }
+  .resume {
+    padding: 100px 0px 50px 0px;
   }
 }
 
@@ -33,6 +73,22 @@
   }
   .icons {
     width: 5vw;
+  }
+  .about-details {
+    flex-direction: column;
+  }
+  .about-text {
+    padding-top: 15px;
+    width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-title, .work-title, .resume-title, .contact-title {
+    padding-bottom: 50px;
+  }
+  .app-title, .role-duration, .job-title {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -53,4 +109,32 @@
   #paint-box {
     padding-bottom: 150px;
   }
+  .education, .skills, .applications, .experience, .others {
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+  }
+  .education-title, .skills-title, .applications-title, .experience-title, .others-title {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .resume-details {
+    width: 95%;
+  }
+  #berkeley-title, #lse-title {
+    padding: 5px 0px 5px 0px;
+  }
+  #berkeley-details, #lse-details {
+    padding: 5px 0px 5px 0px;
+  }
+  .skills, .applications, .experience, .others {
+    line-height: 20px;
+  }
+  .about, .work, .resume, .contact {
+    padding: 50px 0px 50px 0px;
+  }
 }
+

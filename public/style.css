@@ -125,11 +125,11 @@ table {
   align-items: center;
 }
 
-#tab {
+#tabs div {
   transition: 0.3s;
 }
 
-#tab:hover {
+#tabs div:hover {
   cursor: pointer;
   color: rgb(177, 163, 147);
 }
@@ -182,11 +182,11 @@ table {
   padding-right: 20px;
 }
 
-#paint-icon {
+#paint-box svg {
   transition: 0.3s;
 }
 
-#paint-icon:hover {
+#paint-box svg:hover {
   cursor: pointer;
   fill: rgb(228, 151, 56);
 }
@@ -235,7 +235,7 @@ table {
 
 .about-text {
   padding: 0px 20px 10px 20px;
-  width: 350px;
+  width: 400px;
 }
 
 .work {
@@ -247,14 +247,14 @@ table {
 }
 
 .gym-app-img {
-  width: 1300px;
+  width: 50%;
 }
 
 .app-description {
   font-family: 'Open Sans', sans-serif;  
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
-  width: 1300px;
+  width: 50%;
   letter-spacing: 0.5px;
   line-height: 22px;
   background-color: rgb(236, 236, 236);
@@ -289,7 +289,6 @@ table {
   font-size: 15px;
   letter-spacing: 2px;
   padding-top: 50px;
-  /* padding: 0px 50px 100px 50px; */
 }
 
 hr {

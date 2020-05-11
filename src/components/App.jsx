@@ -102,18 +102,18 @@ const App = () => {
         <div id='role'>SOFTWARE ENGINEER</div>
       </div>
       <div id='tabs'>
-        <div id='tab' name="about" onClick={(e) => scrollToSection(e)}>ABOUT</div>
-        <div id='tab' name="work" onClick={(e) => scrollToSection(e)}>WORK</div>
-        <div id='tab' name="resume" onClick={(e) => scrollToSection(e)}>RESUME</div>
-        <div id='tab' name="contact" onClick={(e) => scrollToSection(e)}>CONTACT</div>
+        <div name="about" onClick={(e) => scrollToSection(e)}>ABOUT</div>
+        <div name="work" onClick={(e) => scrollToSection(e)}>WORK</div>
+        <div name="resume" onClick={(e) => scrollToSection(e)}>RESUME</div>
+        <div name="contact" onClick={(e) => scrollToSection(e)}>CONTACT</div>
       </div>
       <Icons />
       <Paint clickToChangeFilter={clickToChangeFilter} color={color} />
       <div className='main-info'>
         <About aboutFlex={aboutFlex}/>
       </div>
-      <Work workSize={workSize} workFontSize={workFontSize}/>
-      <Resume resumeSize={resumeSize} resumeFontSize={resumeFontSize}/>
+      <Work />
+      <Resume />
       <Contact />
     </div>
   );
