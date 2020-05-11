@@ -398,6 +398,31 @@ hr {
 
 .send-btn {
   margin-top: 50px;
-  width: 80px;
-  color: transparent
+  width: 70px;
+  height: 30px;
+  background-color: transparent;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  background-color: rgb(228, 151, 56);
+  transition: 0.5s;
+  color: rgb(96, 96, 96);
+  border-color: transparent;
+
+}
+
+input:focus {
+  outline:none;
+}
+
+button {
+  outline: none; 
 }

@@ -15,7 +15,7 @@ const Contact = () => {
     } else {
       for (var key in input) {
         if (input[key] === '') {
-          alert(`Please fill out ${key} field!`)
+          alert(`Please fill out your ${key}!`)
           break;
         }
       }
