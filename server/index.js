@@ -6,14 +6,14 @@ const morgan = require('morgan');
 const path = require('path');
 const app = express();
 const port = 3000;
-const sendEmail = require('./sendEmail');
+const router = require('./router');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
-app.post('/api/form', sendEmail)
+app.use('/api', router);
 
 app.listen(port, () => console.log(`personal website listening at http://localhost:${port}`));
 
