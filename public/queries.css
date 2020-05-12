@@ -46,10 +46,13 @@
     margin-bottom: 15px;
   }
   .resume-details, .gym-app-img, .app-description {
-    width: 95%;
+    width: 90%;
   }
   .resume {
     padding: 100px 0px 50px 0px;
+  }
+  #download-btn {
+    font-size: 12px;
   }
 }
 
@@ -99,7 +102,7 @@
     font-size: 15px;
   }
   .icons {
-    width: 7vw;
+    width: 9vw;
   }
   #icons-box {
     padding-bottom: 150px;
@@ -133,6 +136,9 @@
   }
   .about, .work, .resume, .contact {
     padding: 50px 0px 50px 0px;
+  }
+  #download-btn {
+    font-size: 10px;
   }
 }
 

@@ -38,7 +38,7 @@ const Resume = ({ resumeSize, resumeFontSize }) => {
         </div>
         <Others />
       </div>
-      <button>Download</button>
+      <a href="./RESUME.pdf" download id="download-btn">DOWNLOAD</a>
     </div>
   );
 };
