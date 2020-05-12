@@ -1,17 +1,18 @@
 import React from 'react';
 
-const Work = () => {
+const Work = ({ work }) => {
+  const { image, name, description, technologies } = work;
   return (
     <div className="work">
       <div className="work-title">
         WORK
       </div>
-      <img className="gym-app-img" src="https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-05+at+5.52.11+PM.png"/>
+      <img className="gym-app-img" src={image}/>
       <div className="app-description">
-        <p style={{fontWeight: 'bold'}}>Personal Trainer Finder</p>
-        <p>Local gym finder mobile application displaying list of personal trainers with customizable profile page and fitness plans. <br/>
+        <p style={{fontWeight: 'bold'}}>{name}</p>
+        <p>{description}<br/>
         {/* Integrated Google Maps Places API to display each gym location and associated user rating. */}
-        Built with: React-Native | React Hooks | Node.js | Express | PostgreSQL/Sequelize | GraphQL | Firebase | Google Places API</p>
+        Built with: {technologies.join(' | ')}</p>
       </div>
     </div>
   );

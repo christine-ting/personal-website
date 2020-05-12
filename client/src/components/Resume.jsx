@@ -5,38 +5,39 @@ import Applications from './Applications';
 import Experience from './Experience';
 import Others from './Others';
 
-const Resume = ({ resumeSize, resumeFontSize }) => {
+const Resume = ({ resume }) => {
+  const { education, skills, applications, experience, others } = resume;
   return (
     <div className="resume">
       <div className="resume-title">
         RESUME
       </div>
-      <div className="resume-details" style={{width: resumeSize, fontSize: resumeFontSize}}>
+      <div className="resume-details">
         <div className="education-title">
           EDUCATION
           <hr/>
         </div>
-        <Education />
+        <Education education={education}/>
         <div className="skills-title">
           TECHNICAL SKILLS
           <hr/>
         </div>
-        <Skills />
+        <Skills skills={skills}/>
         <div className="applications-title">
           APPLICATIONS
           <hr/>
         </div>
-        <Applications />
+        <Applications applications={applications}/>
         <div className="experience-title">
           WORK EXPERIENCE
           <hr/>
         </div>
-        <Experience />
+        <Experience experience={experience}/>
         <div className="others-title">
           LEADERSHIP, SKILLS, ACTIVITIES &amp; INTERESTS
           <hr/>
         </div>
-        <Others />
+        <Others others={others}/>
       </div>
       <a href="./RESUME.pdf" download id="download-btn">DOWNLOAD</a>
     </div>

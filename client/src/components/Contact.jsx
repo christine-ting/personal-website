@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 
-const Contact = () => {
+const Contact = ({ contact }) => {
   const [input, setInput] = useState({ name: '', email: '', message: '' });
   const changeHandler = (e) => {
     setInput(input => ({...input, [event.target.name]: event.target.value}))
@@ -26,8 +26,7 @@ const Contact = () => {
     <div className='contact'>
       <div className='contact-title'>CONTACT</div>
       <div className='contact-message'>
-        Drop me an e-mail at christineting.an@gmail.com or simply fill out the form
-        below and I will reply to you soon!
+        {contact}
       </div>
       <div className='contact-form'>
         <div>

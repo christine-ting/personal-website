@@ -322,11 +322,7 @@ hr {
   padding: 0px 10px 0px 10px;
 }
 
-.berkeley, .lse {
-
-}
-
-#berkeley-title, #lse-title {
+#college-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -334,7 +330,7 @@ hr {
   font-weight: 400;
 }
 
-#berkeley-details, #lse-details {
+#college-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -38,7 +38,7 @@ const App = () => {
     axios
       .get('/api')
       .then((result) => {
-        setPortfolio(result.data);
+        setPortfolio(result.data[0]);
       })
       .catch((err) => {
         console.error(err);
@@ -49,7 +49,7 @@ const App = () => {
     axios
       .get('/api/resume')
       .then((result) => {
-        setResume(result.data);
+        setResume(result.data[0]);
       })
       .catch((err) => {
         console.error(err);
@@ -70,16 +70,16 @@ const App = () => {
     document.querySelector(`.${section}`).scrollIntoView({ behavior: 'smooth' });
   }
 
+  const { name, role, about, work, contact } = portfolio;
+
   return (
     <div className='main-view'>
-      {console.log(portfolio)}
-      {console.log(resume)}
       <div className='top-image' style={{ filter }} />
       <div className='title-top'>
         <div id='name'>
-          CHRISTINE TING
+          {name}
         </div>
-        <div id='role'>SOFTWARE ENGINEER</div>
+        <div id='role'>{role}</div>
       </div>
       <div className="nav" id="myHeader" style={{ bottom: navBottom }}>
         <Tabs scrollToSection={scrollToSection}/>
@@ -87,11 +87,11 @@ const App = () => {
       <Icons />
       <Paint clickToChangeFilter={clickToChangeFilter} color={color} />
       <div className='main-info'>
-        <About />
+        <About about={about}/>
       </div>
-      <Work />
-      <Resume />
-      <Contact />
+      { Object.keys(portfolio).length && <Work work={work}/> }
+      { Object.keys(resume).length && <Resume resume={resume}/> }
+      <Contact contact={contact}/>
     </div>
   );
 };
