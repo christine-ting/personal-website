@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Icons from "./Icons";
 import Paint from "./Paint";
 import About from "./About";
@@ -6,11 +6,14 @@ import Work from "./Work";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Tabs from "./Tabs";
+import axios from 'axios';
 
 const App = () => {
   const [filter, changeFilter] = useState("brightness(100%) grayscale(1)");
   const [color, setColor] = useState(false);
   const [ navBottom, setNavBottom ] = useState(0);
+  const [ portfolio, setPortfolio ] = useState([]);
+  const [ resume, setResume ] = useState([]);
 
   useEffect(() => {
     const header = document.getElementById("myHeader");
@@ -24,10 +27,34 @@ const App = () => {
         setNavBottom(0);
       }
     });
+    getPortfolio();
+    getResume();
     return () => {
       window.removeEventListener("scroll", scrollCallBack);
     };
   }, []);
+
+  const getPortfolio = () => {
+    axios
+      .get('/api')
+      .then((result) => {
+        setPortfolio(result.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+  }
+
+  const getResume = () => {
+    axios
+      .get('/api/resume')
+      .then((result) => {
+        setResume(result.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+  }
 
   const clickToChangeFilter = () => {
     setColor(!color);
@@ -45,6 +72,8 @@ const App = () => {
 
   return (
     <div className='main-view'>
+      {console.log(portfolio)}
+      {console.log(resume)}
       <div className='top-image' style={{ filter }} />
       <div className='title-top'>
         <div id='name'>
