@@ -17,4 +17,4 @@ app.use('/api', router);
 
 app.listen(port, () => console.log(`personal website listening at http://localhost:${port}`));
 
-app.use('/', express.static(path.join(__dirname, '../public')));
+app.use('/', express.static(path.join(__dirname, '../client/dist')));
