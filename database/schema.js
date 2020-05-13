@@ -4,14 +4,14 @@ const PortfolioSchema = new mongoose.Schema({
   name: String,
   role: String,
   about: String,
-  work: {
+  applications: [{
     name: String,
     image: String,
     description: String,
     technologies: [String],
     repo: String,
     url: String
-  },
+  }],
   contact: String
 });
 

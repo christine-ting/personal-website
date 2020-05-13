@@ -2,14 +2,24 @@ const portfolioData = {
   name: 'CHRISTINE TING',
   role: 'SOFTWARE ENGINEER',
   about: 'Hello! I\'m Christine, a full-stack software engineer based in Los Angeles, California.\nI have serious passion for software design and development, and enjoy creating for both web and mobile devices. Also, I love working in a team, with all of us building and learning together toward a common vision.\nFeel free to reach out to me on social media or send me an email. I\'d love to talk about anything from work to life.',
-  work: {
-    name: 'Personal Trainer Finder',
-    image: 'https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-05+at+5.52.11+PM.png',
-    description: 'Local gym finder mobile application displaying list of personal trainers with customizable profile page and fitness plans.',
-    technologies: ['React-Native', 'React Hooks', 'Node.js', 'Express', 'PostgreSQL/Sequelize', 'GraphQL', 'Firebase', 'Google Places API'],
-    repo: 'https://github.com/christine-ting/trainer-finder-app',
-    url: ''
-  },
+  applications: [
+    {
+      name: 'Personal Trainer Finder',
+      image: 'https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-05+at+5.52.11+PM.png',
+      description: 'Local gym finder mobile application displaying list of personal trainers with customizable profile page and fitness plans.',
+      technologies: ['React-Native', 'React Hooks', 'Node.js', 'Express', 'PostgreSQL/Sequelize', 'GraphQL', 'Firebase', 'Google Places API'],
+      repo: 'https://github.com/christine-ting/trainer-finder-app',
+      url: ''
+    },
+    {
+      name: 'REI Product Page Recreation',
+      image: 'https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-13+at+12.19.18+PM.png',
+      description: 'Full simulation of REI (Recreational Equipment, Inc.) product detail page with Service Oriented Architecture (SOA).',
+      technologies: ['React', 'Node.js', 'Express', 'Mongo', 'Mongoose'],
+      repo: 'https://github.com/hrla34-Syntax-Terror',
+      url: 'http://3.101.41.182:8000/'
+    }
+  ],
   contact: 'Drop me an e-mail at christineting.an@gmail.com or simply fill out the form below and I will reply to you soon!'
 };
 
