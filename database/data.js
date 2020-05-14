@@ -12,6 +12,14 @@ const portfolioData = {
       url: ''
     },
     {
+      name: 'Trafalgar System Design Project',
+      image: 'https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-13+at+5.30.54+PM.png',
+      description: 'Back End optimization of a reproduced Trafalgar.com web page with stress test conduction and horizontal scaling.',
+      technologies: ['React', 'Node.js', 'Express', 'Mongo', 'Mongoose', 'PostgreSQL', 'Sequelize', 'AWS EC2'],
+      repo: 'https://github.com/hrla34-doggle',
+      url: ''
+    },
+    {
       name: 'REI Product Page Recreation',
       image: 'https://ct-my-website.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-13+at+12.19.18+PM.png',
       description: 'Full simulation of REI (Recreational Equipment, Inc.) product detail page with Service Oriented Architecture (SOA).',
