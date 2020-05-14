@@ -1,0 +1,44 @@
+@media only screen and (max-width: 2300px) {
+
+  #name {
+    font-size: 70px;
+  }
+  
+  #role {
+    font-size: 23px;
+  }
+
+  .tabs {
+    font-size: 18px;
+    width: 550px;
+  }
+
+  .about-title, .work-title, .resume-title, .contact-title {
+    font-size: 18.4px;
+  }
+
+  .about-details {
+    width: 1035px;
+    font-size: 16.1px;
+    line-height: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 1700px) {
+  
+  #loading-text {
+    font-size: 35px;
+    padding: 0% 0% 20px 0%;
+  }
+
+  #loader {
+    height: 150px;
+    width: 150px;
+  }
+
+  .resume-details, .gym-app-img, .app-description {
+    width: 80%;
+  }
+
+}

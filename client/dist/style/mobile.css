@@ -1,0 +1,65 @@
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+  #loading-text {
+    font-size: 4vw;
+    padding: 0% 0% 4% 0%;
+  }
+
+  #loader {
+    height: 17%;
+    width: 17%;
+  }
+
+  .tabs {
+    font-size: 3.5vw;
+    width: 90%;
+  }
+
+  .icons {
+    width: 9vw;
+  }
+
+  #icons-box {
+    padding-bottom: 12vh;
+  }
+
+  .paint {
+    padding-bottom: 20vh;
+  }
+
+  .about-text {
+    font-size: 3.5vw;
+    line-height: 18px;
+  }
+
+  .education, .skills, .applications, .experience, .others {
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+  }
+  .education-title, .skills-title, .applications-title, .experience-title, .others-title {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .resume-title {
+    padding-bottom: 30px;
+  }
+  hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  #berkeley-title, #lse-title {
+    padding: 5px 0px 5px 0px;
+  }
+  #berkeley-details, #lse-details {
+    padding: 5px 0px 5px 0px;
+  }
+  .skills, .applications, .experience, .others {
+    line-height: 20px;
+  }
+
+  #download-btn {
+    font-size: 10px;
+  }
+}
+
