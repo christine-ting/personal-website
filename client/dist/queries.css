@@ -61,8 +61,9 @@
   }
 
   .icons {
-    width: 4vw;
+    width: 5vw;
   }
+
   .app-description {
     font-size: 13px;
     line-height: 18px;
@@ -93,9 +94,14 @@
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
 
-  .icons {
-    width: 5vw;
+  #name {
+    font-size: 9vw;
   }
+
+  #role {
+    font-size: 4vw;
+  }
+  
   .about-details {
     flex-direction: column;
   }
@@ -131,13 +137,13 @@
     width: 17%;
   }
 
-  #name {
+  /* #name {
     font-size: 9vw;
   }
 
   #role {
     font-size: 4vw;
-  }
+  } */
 
   .tabs {
     font-size: 3.5vw;
@@ -147,9 +153,11 @@
   .icons {
     width: 9vw;
   }
+
   #icons-box {
-    padding-bottom: 150px;
+    padding-bottom: 12vh;
   }
+
   #paint-box {
     padding-bottom: 150px;
   }

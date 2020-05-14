@@ -56,7 +56,7 @@ const App = () => {
       .then(result => {
         setResume(result.data[0]);
         setTimeout(() => {
-          // setLoading(false);
+          setLoading(false);
           setStickyHeader();
         }, 500);
       })
