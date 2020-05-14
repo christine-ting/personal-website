@@ -175,7 +175,7 @@ table {
   color: whitesmoke;
 }
 
-.icons {
+.icons, .paint {
   height: 100vh;
   position: absolute;
   top: 0;
@@ -207,25 +207,15 @@ table {
 }
 
 .paint {
-  height: 100vh;
-  position: absolute;
   right: 0;
-  top: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-#paint-box {
-  padding-bottom: 100px;
-  padding-right: 20px;
-}
-
-#paint-box svg {
+.paint svg {
   transition: 0.3s;
 }
 
-#paint-box svg:hover {
+.paint svg:hover {
   cursor: pointer;
   fill: rgb(228, 151, 56);
 }

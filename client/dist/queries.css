@@ -101,7 +101,7 @@
   #role {
     font-size: 4vw;
   }
-  
+
   .about-details {
     flex-direction: column;
   }
@@ -137,14 +137,6 @@
     width: 17%;
   }
 
-  /* #name {
-    font-size: 9vw;
-  }
-
-  #role {
-    font-size: 4vw;
-  } */
-
   .tabs {
     font-size: 3.5vw;
     width: 90%;
@@ -158,9 +150,10 @@
     padding-bottom: 12vh;
   }
 
-  #paint-box {
-    padding-bottom: 150px;
+  .paint {
+    padding-bottom: 20vh;
   }
+
   .education, .skills, .applications, .experience, .others {
     padding: 0px 3px 0px 3px;
     font-size: 12px;
