@@ -1,21 +1,41 @@
+@media only screen and (max-width: 2300px) {
+
+  #name {
+    font-size: 70px;
+  }
+  
+  #role {
+    font-size: 23px;
+  }
+
+  .tabs {
+    font-size: 18px;
+    width: 550px;
+  }
+
+}
+
 @media only screen and (max-width: 1700px) {
+  
+  #loading-text {
+    font-size: 35px;
+    padding: 0% 0% 20px 0%;
+  }
+
+  #loader {
+    height: 150px;
+    width: 150px;
+  }
+
   .resume-details, .gym-app-img, .app-description {
     width: 80%;
   }
+
 }
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
-  #name {
-    font-size: 65px;
-  }
-  #role {
-    font-size: 18px;
-  }
-  #tabs {
-    font-size: 15px;
-    width: 400px;
-  }
+
   .resume-details, .gym-app-img, .app-description {
     width: 85%;
   }
@@ -26,6 +46,20 @@
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+
+  #name {
+    font-size: 50px;
+  }
+  
+  #role {
+    font-size: 18px;
+  }
+
+  .tabs {
+    font-size: 15px;
+    width: 400px;
+  }
+
   .icons {
     width: 4vw;
   }
@@ -58,16 +92,7 @@
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-  #name {
-    font-size: 40px;
-  }
-  #role {
-    font-size: 16px;
-  }
-  #tabs {
-    font-size: 13px;
-    width: 65%
-  }
+
   .icons {
     width: 5vw;
   }
@@ -95,12 +120,30 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+
+  #loading-text {
+    font-size: 4vw;
+    padding: 0% 0% 4% 0%;
+  }
+
+  #loader {
+    height: 17%;
+    width: 17%;
+  }
+
   #name {
-    font-size: 40px;
+    font-size: 9vw;
   }
+
   #role {
-    font-size: 15px;
+    font-size: 4vw;
   }
+
+  .tabs {
+    font-size: 3.5vw;
+    width: 90%;
+  }
+
   .icons {
     width: 9vw;
   }

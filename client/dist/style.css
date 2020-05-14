@@ -1,4 +1,4 @@
-------------------------RESET CSS------------------------ */
+/* ------------------------RESET CSS------------------------ */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -52,6 +52,8 @@ table {
   margin: 0;
 }
 
+/* ------------------------loader------------------------ */
+
 .loading {
   background-color: rgb(53, 49, 43);
   height: 100vh;
@@ -60,25 +62,26 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
 #loading-text {
   color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 35px;
-  padding-bottom: 2%;
+  font-size: 2vw;
+  padding: 0% 0% 1% 0%;
 }
+
+#loader {
+  height: 10%;
+  width: 10%;
+}
+
+/* ------------------------top------------------------ */
 
 .top-image {
   position: relative;
-  background-image: url('https://ct-my-website.s3-us-west-1.amazonaws.com/IMG_6053+3.JPG');
+  background-image: url('./background.JPG');
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -105,32 +108,31 @@ table {
   }
 }
 
+.title-top, #name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title-top {
   position: absolute;
   color: whitesmoke;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #name {
-  font-size: 80px;
+  width: 100vw;
+  font-size: 3vw;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
-  letter-spacing: 2px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  letter-spacing: 1%;
+  padding-bottom: 1%;
 }
 
 #role {
-  color: whitesmoke;
-  font-size: 20px;
+  font-size: 1vw;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
@@ -145,16 +147,16 @@ table {
   justify-content: center;
 }
 
-#tabs {
+.tabs {
   width: 25%;
-  font-size: 17px;
+  font-size: 0.7vw;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: flex-start;
   font-weight: 300;
   color: rgb(228, 151, 56);
-  align-content: flex-start;
 }
 
 .sticky {
@@ -164,11 +166,11 @@ table {
   background-color: rgb(53, 49, 43);
 }
 
-#tabs div {
+.tabs div {
   transition: 0.3s;
 }
 
-#tabs div:hover {
+.tabs div:hover {
   cursor: pointer;
   color: whitesmoke;
 }
@@ -230,18 +232,15 @@ table {
   fill: rgb(228, 151, 56);
 }
 
-.main-info {
+.about, .all-work {
+  padding: 4% 0% 4% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(196, 196, 196);
 }
 
 .about {
-  padding: 100px 0px 100px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(196, 196, 196);
 }
 
 .about-title, .work-title, .resume-title, .contact-title {
@@ -283,20 +282,20 @@ table {
 
 .all-work {
   background-color: rgb(226, 226, 226);
-  padding: 100px 0px 100px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .gym-app-img {
   width: 1200px;
 }
 
-.app-img-view {
+.app-img-view, .app-img-view-sdc {
   width: 1200px;
   background-color: rgb(43, 191, 102);
   display: flex;
@@ -305,8 +304,25 @@ table {
   align-items: center;
 }
 
+.app-img-view-sdc {
+  background-color: rgb(211, 135, 42);
+  height: 700px;
+}
+
 .app-img {
   width: 90%;
+}
+
+.app-img-sdc {
+  height: 600px;
+}
+
+.app-img-text {
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 10px; 
+  color: whitesmoke;
 }
 
 .app-description {
@@ -356,7 +372,7 @@ table {
 
 .resume {
   background-color: rgb(176, 176, 176);
-  padding: 150px 0px 100px 0px;
+  padding: 4% 0% 4% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,7 +451,7 @@ hr {
 }
 
 .contact {
-  padding: 100px 0px 300px 0px;
+  padding: 4% 0% 12% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
