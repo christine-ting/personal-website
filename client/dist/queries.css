@@ -55,6 +55,10 @@
     width: 500px;
   }
 
+  .profile-pic {
+    width: 429.5px;
+  }
+
   .resume-details, .gym-app-img, .app-description {
     width: 85%;
   }
