@@ -220,6 +220,8 @@ table {
   fill: rgb(228, 151, 56);
 }
 
+/* ------------------------about------------------------ */
+
 .about, .all-work {
   padding: 4% 0% 4% 0%;
   display: flex;
@@ -238,35 +240,44 @@ table {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 0.8vw;
   letter-spacing: 2px;
-  padding-bottom: 80px;
-}
-
-.resume-title {
-  padding-bottom: 30px;
-}
-
-.profile-pic {
-  width: 300px;
+  padding-bottom: 3%;
 }
 
 .about-details {
   display: flex;
   flex-direction: row;
   font-family: 'Open Sans', sans-serif;  
-  font-size: 16px;
+  font-size: 0.7vw;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 150%;
   justify-content: center;
   align-items: center;
+  width: 45%;
+}
+
+.profile-pic {
+  width: 30%;
 }
 
 .about-text {
-  padding: 0px 20px 10px 20px;
-  width: 400px;
+  box-sizing: border-box;
+  padding: 0% 2% 1% 2%;
+  width: 70%;
 }
+
+.about-text p {
+  margin-bottom: 1%;
+}
+
+.resume-title {
+  padding-bottom: 30px;
+}
+
+
+
 
 .all-work {
   background-color: rgb(226, 226, 226);

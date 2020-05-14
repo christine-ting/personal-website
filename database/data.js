@@ -1,7 +1,7 @@
 const portfolioData = {
   name: 'CHRISTINE TING',
   role: 'SOFTWARE ENGINEER',
-  about: 'Hello! I\'m Christine, a full-stack software engineer based in Los Angeles, California.\nI have serious passion for software design and development, and enjoy creating for both web and mobile devices. Also, I love working in a team, with all of us building and learning together toward a common vision.\nFeel free to reach out to me on social media or send me an email. I\'d love to talk about anything from work to life.',
+  about: 'Hello! I\'m Christine, an enthusiastic full-stack software engineer based in Los Angeles, California.|Software design and development have always been my biggest passion, because of its ability to transform idea into reality with the essence of efficiency! I particularly find it purposeful therefore enjoyable when learning and building with different brains as a team towards a shared vision.|With the belief that only magic can surpass technology, I am eager to use my technological skills and creativity to provide service/product to fill in the gaps in this society and make this world a better place.|Feel free to reach out to me on social media or send me an email. I\'d love to talk about anything from work to life!',
   applications: [
     {
       name: 'Personal Trainer Finder',
