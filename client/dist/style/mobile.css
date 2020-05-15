@@ -33,14 +33,32 @@
     line-height: 18px;
   }
 
-  .education, .skills, .applications, .experience, .others {
+  .profile-pic {
+    width: 80%;
+  }
+
+  .app-description, .app-img-text {
+    font-size: 2.5vw;
+    line-height: 1.5em;
+  }
+
+  .app-description {
+    letter-spacing: 0.1px;
+  }
+
+  .view-repo, .visit-site {
+    font-size: 2vw;
+    padding: 2%;
+  }
+
+  /* .education, .skills, .applications, .experience, .others {
     padding: 0px 3px 0px 3px;
     font-size: 12px;
-  }
-  .education-title, .skills-title, .applications-title, .experience-title, .others-title {
+  } */
+  /* .education-title, .skills-title, .applications-title, .experience-title, .others-title {
     font-size: 12px;
     padding-top: 20px;
-  }
+  } */
   .resume-title {
     padding-bottom: 30px;
   }

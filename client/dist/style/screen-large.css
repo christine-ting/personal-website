@@ -166,18 +166,7 @@
   fill: rgb(228, 151, 56);
 }
 
-/* ------------------------about------------------------ */
-
-.about, .all-work {
-  padding: 4% 0% 4% 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about {
-  background-color: rgb(196, 196, 196);
-}
+/* ------------------------common------------------------ */
 
 .about-title, .work-title, .resume-title, .contact-title {
   width: 100vw;
@@ -191,17 +180,29 @@
   padding-bottom: 3%;
 }
 
+.about, .all-work {
+  padding: 4% 0% 4% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc {
+  width: 45%;
+}
+
+/* ------------------------about------------------------ */
+
+.about {
+  background-color: rgb(196, 196, 196);
+}
+
 .about-details {
   display: flex;
   flex-direction: row;
-  font-family: 'Open Sans', sans-serif;  
-  font-size: 0.7vw;
   -webkit-font-smoothing: antialiased;
-  font-weight: 300;
-  line-height: 150%;
   justify-content: center;
   align-items: center;
-  width: 45%;
 }
 
 .profile-pic {
@@ -212,18 +213,17 @@
   box-sizing: border-box;
   padding: 0% 2% 1% 2%;
   width: 70%;
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 0.7vw;
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 .about-text p {
   margin-bottom: 1%;
 }
 
-.resume-title {
-  padding-bottom: 30px;
-}
-
-
-
+/* ------------------------work------------------------ */
 
 .all-work {
   background-color: rgb(226, 226, 226);
@@ -233,15 +233,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.gym-app-img {
-  width: 1200px;
+  width: 100vw;
 }
 
 .app-img-view, .app-img-view-sdc {
-  width: 1200px;
   background-color: rgb(43, 191, 102);
   display: flex;
   flex-direction: column;
@@ -251,7 +246,8 @@
 
 .app-img-view-sdc {
   background-color: rgb(211, 135, 42);
-  height: 700px;
+  padding: 1% 0% 1% 0%;
+  box-sizing: border-box;
 }
 
 .app-img {
@@ -259,30 +255,34 @@
 }
 
 .app-img-sdc {
-  height: 600px;
+  width: 60%;
 }
 
 .app-img-text {
   font-family: 'Open Sans', sans-serif;  
-  font-size: 16px;
+  height: 5%;
+  font-size: 0.7vw;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 10px; 
   color: whitesmoke;
+  padding-bottom: 0.5%;
 }
 
 .app-description {
   font-family: 'Open Sans', sans-serif;  
-  font-size: 15px;
+  font-size: 0.6vw;
   -webkit-font-smoothing: antialiased;
-  width: 1200px;
   letter-spacing: 0.5px;
-  line-height: 22px;
+  line-height: 2em;
   background-color: rgb(236, 236, 236);
-  padding: 30px 25px 30px 25px;
+  padding: 1%;
   box-sizing: border-box;
   color: rgb(56, 56, 56);
   font-weight: 300;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+.all-work {
+  padding-bottom: 1%;
 }
 
 .work-btn {
@@ -293,7 +293,7 @@
 .view-repo, .visit-site {
   border-color: rgb(104, 129, 230);
   border-width: 0.5px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -314,6 +314,9 @@
   border-color: transparent;
   border-width: 0.5px;
 }
+
+
+
 
 .resume {
   background-color: rgb(176, 176, 176);

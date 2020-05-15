@@ -14,12 +14,15 @@
     width: 429.5px;
   }
 
-  .resume-details, .gym-app-img, .app-description {
+  .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc {
+    width: 90%;
+  }
+  /* .resume-details, .gym-app-img, .app-description {
     width: 85%;
-  }
-  .education, .skills, .applications, .experience, .others {
+  } */
+  /* .education, .skills, .applications, .experience, .others {
     font-size: 15px;
-  }
+  } */
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
@@ -42,25 +45,25 @@
     width: 5vw;
   }
 
-  .app-description {
+  /* .app-description {
     font-size: 13px;
     line-height: 18px;
     padding: 20px 15px 20px 15px;
-  }
-  .education, .skills, .applications, .experience, .others {
+  } */
+  /* .education, .skills, .applications, .experience, .others {
     padding: 0px 5px 0px 5px;
     font-size: 13px;
-  }
-  .education-title, .skills-title, .applications-title, .experience-title, .others-title {
+  } */
+  /* .education-title, .skills-title, .applications-title, .experience-title, .others-title {
     font-size: 13px;
-  }
+  } */
   hr {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .resume-details, .gym-app-img, .app-description {
+  /* .resume-details, .gym-app-img, .app-description {
     width: 90%;
-  }
+  } */
   .resume {
     padding: 100px 0px 50px 0px;
   }
@@ -93,6 +96,18 @@
   .profile-pic {
     width: 80%;
   }
+
+  .app-description, .app-img-text {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .view-repo, .visit-site {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+
 
   .app-title, .role-duration, .job-title {
     display: flex;
