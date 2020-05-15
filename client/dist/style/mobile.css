@@ -68,5 +68,13 @@
     padding-top: 3%;
   }
 
+  .sticky {
+    padding: 3% 0% 3% 0%;
+  }
+
+  .nav {
+    padding: 3% 0% 3% 0%;
+  }
+
 }
 

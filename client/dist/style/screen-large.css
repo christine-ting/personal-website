@@ -89,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  height: 5%;
+  padding: 1.5% 0% 1.5% 0%;
   justify-content: center;
 }
 

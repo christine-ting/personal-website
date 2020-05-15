@@ -38,6 +38,10 @@
     font-size: 13.8px;
   }
 
+  .nav {
+    padding: 30px 0px 30px 0px;
+  }
+
 }
 
 @media only screen and (max-width: 1700px) {
