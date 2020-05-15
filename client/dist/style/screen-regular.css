@@ -17,7 +17,7 @@
     font-size: 18.4px;
   }
 
-  .about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc {
+  .about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc, .resume-details {
     width: 1035px;
   }
 
@@ -30,10 +30,14 @@
     font-size: 16.1px;
   }
 
-  .app-description {
+  .app-description, .education-title, .skills-title, .applications-title, .experience-title, .others-title, .education, .skills, .applications, .experience, .others {
     font-size: 13.8px;
   }
 
+  #download-btn {
+    font-size: 13.8px;
+  }
+  
 }
 
 @media only screen and (max-width: 1700px) {
@@ -47,9 +51,5 @@
     height: 150px;
     width: 150px;
   }
-
-  /* .resume-details, .gym-app-img, .app-description {
-    width: 80%;
-  } */
 
 }
