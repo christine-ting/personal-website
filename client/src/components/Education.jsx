@@ -3,7 +3,7 @@ import React from 'react';
 const Education = ({ education }) => {
   return (
     <div className="education">
-      { education.map((school, index) => {
+      {education.map((school, index) => {
         const { college, place, degree, time } = school;
         return (
           <div className="college" key={index}>
@@ -12,14 +12,12 @@ const Education = ({ education }) => {
               <div>{place}</div>
             </div>
             <div id="college-details">
-              <div>
-                {degree}
-              </div>
+              <div>{degree}</div>
               <div>{time}</div>
             </div>
           </div>
-        )
-      }) }
+        );
+      })}
     </div>
   );
 };

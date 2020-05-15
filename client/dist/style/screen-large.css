@@ -180,14 +180,14 @@
   padding-bottom: 3%;
 }
 
-.about, .all-work {
+.about, .all-work, .resume {
   padding: 4% 0% 4% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc {
+.about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc, .resume-details {
   width: 45%;
 }
 
@@ -315,15 +315,10 @@
   border-width: 0.5px;
 }
 
-
-
+/* ------------------------resume------------------------ */
 
 .resume {
   background-color: rgb(176, 176, 176);
-  padding: 4% 0% 4% 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: 'Open Sans', sans-serif;  
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
@@ -333,35 +328,33 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: flex-start;
-  width: 1200px;
 }
 
 .education-title, .skills-title, .applications-title, .experience-title, .others-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 2px;
-  padding-top: 50px;
+  font-size: 0.6vw;
+  letter-spacing: 0.2em;
+  padding-top: 3%;
 }
 
 hr {
   border-color: rgb(156, 156, 156);
   border-width: 0.2px;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 2% 0% 2% 0%;
 }
 
 .education, .skills, .applications, .experience, .others {
-  padding: 0px 10px 0px 10px;
+  padding: 0% 1% 0% 1%;
+  font-size: 0.6vw;
 }
 
 #college-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 0px 10px 0px;
+  padding-bottom: 1%;
   font-weight: 400;
 }
 
@@ -369,11 +362,15 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 0px 10px 0px;
+  padding-bottom: 1.5%;
+}
+
+.skills-title {
+  padding-top: 1.5%;
 }
 
 .skills, .applications, .experience, .others {
-  line-height: 30px;
+  line-height: 1.7em;
 }
 
 .my-app, .job {

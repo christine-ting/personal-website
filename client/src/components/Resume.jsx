@@ -9,37 +9,37 @@ const Resume = ({ resume }) => {
   const { education, skills, applications, experience, others } = resume;
   return (
     <div className="resume">
-      <div className="resume-title">
-        RESUME
-      </div>
+      <div className="resume-title">RESUME</div>
       <div className="resume-details">
         <div className="education-title">
           EDUCATION
-          <hr/>
+          <hr />
         </div>
-        <Education education={education}/>
+        <Education education={education} />
         <div className="skills-title">
           TECHNICAL SKILLS
-          <hr/>
+          <hr />
         </div>
-        <Skills skills={skills}/>
+        <Skills skills={skills} />
         <div className="applications-title">
           APPLICATIONS
-          <hr/>
+          <hr />
         </div>
-        <Applications applications={applications}/>
+        <Applications applications={applications} />
         <div className="experience-title">
           WORK EXPERIENCE
-          <hr/>
+          <hr />
         </div>
-        <Experience experience={experience}/>
+        <Experience experience={experience} />
         <div className="others-title">
           LEADERSHIP, SKILLS, ACTIVITIES &amp; INTERESTS
-          <hr/>
+          <hr />
         </div>
-        <Others others={others}/>
+        <Others others={others} />
       </div>
-      <a href="./RESUME.pdf" download id="download-btn">DOWNLOAD</a>
+      <a href="./RESUME.pdf" download id="download-btn">
+        DOWNLOAD
+      </a>
     </div>
   );
 };
