@@ -58,7 +58,7 @@ const App = () => {
         setTimeout(() => {
           setLoading(false);
           setStickyHeader();
-        }, 500);
+        }, 3000);
       })
       .catch(err => {
         console.error(err);
