@@ -180,14 +180,14 @@
   padding-bottom: 3%;
 }
 
-.about, .all-work, .resume {
+.about, .all-work, .resume, .contact {
   padding: 4% 0% 4% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc, .resume-details {
+.about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc, .resume-details, .contact-form {
   width: 45%;
 }
 
@@ -421,14 +421,10 @@ hr {
   color: rgb(206, 206, 206);
 }
 
-
-
+/* ------------------------contact------------------------ */
 
 .contact {
-  padding: 4% 0% 12% 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 12%;
   background-color: rgb(96, 96, 96);
   color: whitesmoke;
   font-family: 'Open Sans', sans-serif;  
@@ -437,23 +433,22 @@ hr {
 }
 
 .contact-message {
+  font-size: 0.7vw;
   text-align: center;
-  padding: 0px 20px 0px 20px;
-  line-height: 25px;
+  padding: 0% 4% 2% 4%;
+  line-height: 1.5em;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px 20px 0px;
-  width: 1200px;
 }
 
 #name-input, #email-input, #message-input {
   width: 50%;
-  font-size: 15px;
-  padding: 10px;
+  font-size: 0.6vw;
+  padding: 1%;
   border-radius: 5px;
   border:none;
 }
@@ -463,13 +458,13 @@ hr {
 }
 
 .contact-form div {
-  padding-top: 20px;
+  padding-top: 1.5%;
   width: 100%;
   text-align: center;
 }
 
 .send-btn {
-  margin-top: 50px;
+  margin-top: 5%;
   padding: 10px 18px 10px 18px;
   background-color: transparent;
   color: whitesmoke;

@@ -81,10 +81,12 @@
     padding: 8px;
   }
 
-
-
-  
   .contact-form, #name-input, #email-input, #message-input {
     width: 90%;
   }
+
+  .contact-form div {
+    padding-top: 2.5%;
+  }
+
 }
