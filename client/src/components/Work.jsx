@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Work = ({ applications }) => {
+const Work = ({ applications, addImagesCount }) => {
   
   const linkToPage = url => {
     window.open(url, '_blank');
@@ -21,17 +21,17 @@ const Work = ({ applications }) => {
         return (
           <div className="work" key={index}>
             {name === 'Personal Trainer Finder' ? (
-              <img className="gym-app-img" src={image} />
+              <img className="gym-app-img" src={image} onLoad={() => addImagesCount()} />
             ) : name === 'Trafalgar System Design Project' ? (
               <div className="app-img-view-sdc">
                 <div className="app-img-text">
                   Three EC2 Instances with Nginx Caching and Load Balancing
                 </div>
-                <img className="app-img-sdc" src={image} />
+                <img className="app-img-sdc" src={image} onLoad={() => addImagesCount()} />
               </div>
             ) : (
               <div className="app-img-view">
-                <img className="app-img" src={image} />
+                <img className="app-img" src={image} onLoad={() => addImagesCount()} />
               </div>
             )}
             <div className="app-description">

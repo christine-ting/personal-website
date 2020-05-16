@@ -8,6 +8,9 @@ import Contact from './Contact';
 import Tabs from './Tabs';
 import axios from 'axios';
 import Loader from 'react-loader-spinner';
+import $ from 'jquery';
+
+let backgroundImgLoaded = false;
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -16,6 +19,8 @@ const App = () => {
   const [navBottom, setNavBottom] = useState(0);
   const [portfolio, setPortfolio] = useState([]);
   const [resume, setResume] = useState([]);
+  const [imagesCount, setImagesCount] = useState(0);
+  const [loadedFromDb, setLoadedFromDb] = useState(false);
 
   const setStickyHeader = () => {
     const header = document.getElementById('my-header');
@@ -35,8 +40,19 @@ const App = () => {
   };
 
   useEffect(() => {
+    if ((imagesCount === 4) & backgroundImgLoaded) {
+      setLoading(false);
+    }
     getPortfolio();
-  }, []);
+    var src = $('.top-image').css('background-image');
+    var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g, '');
+    var img = new Image();
+    img.onload = function() {
+      backgroundImgLoaded = true;
+    };
+    img.src = url;
+    if (img.complete) img.onload();
+  }, [imagesCount]);
 
   const getPortfolio = () => {
     axios
@@ -55,10 +71,8 @@ const App = () => {
       .get('/api/resume')
       .then(result => {
         setResume(result.data[0]);
-        setTimeout(() => {
-          setLoading(false);
-          setStickyHeader();
-        }, 3000);
+        setLoadedFromDb(true);
+        setStickyHeader();
       })
       .catch(err => {
         console.error(err);
@@ -81,35 +95,53 @@ const App = () => {
       .scrollIntoView({ behavior: 'smooth' });
   };
 
+  const displayLoadingPage = () => {
+    if (isLoading) {
+      return (
+        <div className="loading">
+          <div id="loading-text">LOADING...</div>
+          <div id="loader">
+            <Loader
+              type="Rings"
+              color="whitesmoke"
+              height={'100%'}
+              width={'100%'}
+            />
+          </div>
+        </div>
+      );
+    }
+  };
+
+  const addImagesCount = () => {
+    setImagesCount(imagesCount + 1);
+  };
+
   const { name, role, about, applications, contact } = portfolio;
 
   return (
     <div>
-      {isLoading ? (
-        <div className="loading">
-          <div id="loading-text">LOADING...</div>
-          <div id="loader">
-            <Loader type="Rings" color="whitesmoke" height={'100%'} width={'100%'} />
-          </div>
+      {displayLoadingPage()}
+      <div className="main-view">
+        <div className="top-image" style={{ filter }} />
+        <div className="title-top">
+          <div id="name">{name}</div>
+          <div id="role">{role}</div>
         </div>
-      ) : (
-        <div className="main-view">
-          <div className="top-image" style={{ filter }} />
-          <div className="title-top">
-            <div id="name">{name}</div>
-            <div id="role">{role}</div>
-          </div>
-          <div className="nav" id="my-header" style={{ bottom: navBottom }}>
-            <Tabs scrollToSection={scrollToSection} />
-          </div>
-          <Icons />
-          <Paint clickToChangeFilter={clickToChangeFilter} color={color} />
-          <About about={about} />
-          <Work applications={applications} />
-          <Resume resume={resume} />
-          <Contact contact={contact} />
+        <div className="nav" id="my-header" style={{ bottom: navBottom }}>
+          <Tabs scrollToSection={scrollToSection} />
         </div>
-      )}
+        <Icons />
+        <Paint clickToChangeFilter={clickToChangeFilter} color={color} />
+        {loadedFromDb && (
+          <div>
+            <About about={about} addImagesCount={addImagesCount} />
+            <Work applications={applications} addImagesCount={addImagesCount} />
+            <Resume resume={resume} />
+            <Contact contact={contact} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
