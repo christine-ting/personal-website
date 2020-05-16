@@ -8,6 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+.main-view {
+  z-index: 0;
 }
 
 #loading-text {
