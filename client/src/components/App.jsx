@@ -39,19 +39,22 @@ const App = () => {
     };
   };
 
-  useEffect(() => {
-    if ((imagesCount === 4) & backgroundImgLoaded) {
-      setLoading(false);
-    }
-    getPortfolio();
+  const loadBackgroundImg = () => {
     var src = $('.top-image').css('background-image');
     var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g, '');
     var img = new Image();
     img.onload = function() {
-      backgroundImgLoaded = true;
+      setLoading(false);
     };
     img.src = url;
     if (img.complete) img.onload();
+  }
+
+  useEffect(() => {
+    if (imagesCount === 4) {
+      loadBackgroundImg();
+    }
+    getPortfolio();
   }, [imagesCount]);
 
   const getPortfolio = () => {
