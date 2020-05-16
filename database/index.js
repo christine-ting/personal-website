@@ -3,7 +3,8 @@ const PortfolioSchema = require('./schema.js').PortfolioSchema;
 const ResumeSchema = require('./schema.js').ResumeSchema;
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/Portfolio', {useNewUrlParser: true})
+mongoose
+  .connect('mongodb://localhost/Portfolio', { useNewUrlParser: true })
   .then(() => console.log('db connected'));
 
 const Portfolio = mongoose.model('Portfolio', PortfolioSchema);

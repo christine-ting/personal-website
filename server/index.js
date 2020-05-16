@@ -15,6 +15,8 @@ app.use(morgan('dev'));
 
 app.use('/api', router);
 
-app.listen(port, () => console.log(`personal website listening at http://localhost:${port}`));
+app.listen(port, () =>
+  console.log(`personal website listening at http://localhost:${port}`)
+);
 
 app.use('/', express.static(path.join(__dirname, '../client/dist')));
