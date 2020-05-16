@@ -10,8 +10,6 @@ import axios from 'axios';
 import Loader from 'react-loader-spinner';
 import $ from 'jquery';
 
-let backgroundImgLoaded = false;
-
 const App = () => {
   const [isLoading, setLoading] = useState(true);
   const [filter, changeFilter] = useState('brightness(100%) grayscale(1)');
