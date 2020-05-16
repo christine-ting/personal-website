@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const sendEmail = require('./sendEmail');
+const sendMessage = require('./sendMessage');
 const controllers = require('./controllers');
 
 router
@@ -12,6 +12,6 @@ router
 
 router
   .route('/form')
-  .post(sendEmail);
+  .post(sendMessage);
 
 module.exports = router;
