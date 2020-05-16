@@ -38,6 +38,7 @@ const sendMessage = (req, res) => {
   sendEmail
     .then(data => {
       console.log('email submitted to SES', data);
+      res.status(201).send('email sent!')
     })
     .catch(error => {
       console.log(error);
