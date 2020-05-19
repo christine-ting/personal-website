@@ -173,7 +173,7 @@ const resumeData = {
       details: [
         'Executed drain event in Node to successfully seed 10 million records to database for stress testing using Artillery.',
         'Benchmarked PostgreSQL and Mongo systems to achieve minimal query times via indexing.',
-        'Increased throughput from 1.2K to 9K RPS with a latency of 62ms and error rate of 0% by scaling out to three EC2 instances along with caching and load balancing with Nginx.'
+        'Increased throughput from 1.2K to 9K RPS with a latency of 62ms and error rate of 0% by scaling out to three EC2 instances along with caching Nginx load balancer.'
       ]
     },
     {
