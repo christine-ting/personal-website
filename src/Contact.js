@@ -5,7 +5,7 @@ const Contact = () => {
   const [input, setInput] = useState({ name: "", email: "", message: "" });
 
   const changeHandler = (event) => {
-    if (event?.target?.name && event?.target?.value) {
+    if (event?.target?.name !== undefined && event?.target?.value !== undefined) {
       setInput((input) => ({
         ...input,
         [event?.target?.name]: event?.target?.value,
@@ -40,7 +40,7 @@ const Contact = () => {
     <div className="contact">
       <div className="contact-title">CONTACT</div>
       <div className="contact-message">
-        Drop me an email at christineting.an@gmail.com or simply fill out the
+        Drop me an email at <a href="mailto:christineting.an@gmail.com">christineting.an@gmail.com </a>or simply fill out the
         form below and I will reply to you soon!
       </div>
       <div className="contact-form">
