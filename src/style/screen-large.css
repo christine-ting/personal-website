@@ -95,15 +95,17 @@
 .atini-logo {
   width: 6rem;
   height: 6rem;
-  background: url("https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_white.png?alt=media&token=2a285b40-44cc-41d2-b696-4bf0b2476106")
-    no-repeat;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_white.png?alt=media&token=2a285b40-44cc-41d2-b696-4bf0b2476106");
   background-size: contain;
-  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   margin-top: 1.2rem;
   border-radius: 2px;
   cursor: pointer;
   transition: 0.3s;
+  -o-background-size:contain; 
+  -moz-background-size:contain; 
+  -webkit-background-size:contain; 
 }
 
 .atini-logo:hover {
