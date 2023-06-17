@@ -1,0 +1,561 @@
+/* ------------------------loader------------------------ */
+
+.loading {
+  background-color: rgb(53, 49, 43);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+.main-view {
+  z-index: 0;
+}
+
+#loading-text {
+  color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+  padding: 0% 0% 1% 0%;
+}
+
+#loader {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------------top------------------------ */
+
+.top-image {
+  position: relative;
+  background-image: url("./background.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation-name: photo;
+  animation-duration: 5s;
+}
+
+@keyframes photo {
+  from {
+    -webkit-filter: brightness(0%) grayscale(100%);
+    -moz-filter: brightness(0%) grayscale(100%);
+    -o-filter: brightness(0%) grayscale(100%);
+    filter: brightness(0%) grayscale(100%);
+  }
+  to {
+    -webkit-filter: brightness(100%) grayscale(100%);
+    -moz-filter: brightness(100%) grayscale(100%);
+    -o-filter: brightness(100%) grayscale(100%);
+    filter: brightness(100%) grayscale(100%);
+  }
+}
+
+.title-top,
+#name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-top {
+  position: absolute;
+  color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#name {
+  width: 100vw;
+  font-size: 3vw;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1%;
+  padding-bottom: 1%;
+}
+
+#role {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.atini-logo {
+  width: 6rem;
+  height: 6rem;
+  background: url("https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_white.png?alt=media&token=2a285b40-44cc-41d2-b696-4bf0b2476106")
+    no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 1.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.atini-logo:hover {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_color.png?alt=media&token=2a285b40-44cc-41d2-b696-4bf0b2476106");
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 1.5% 0% 1.5% 0%;
+  justify-content: center;
+}
+
+.tabs {
+  width: 25%;
+  font-size: 0.7vw;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  font-weight: 300;
+  color: rgb(228, 151, 56);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(53, 49, 43);
+}
+
+.tabs div {
+  transition: 0.3s;
+}
+
+.tabs div:hover {
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.icons,
+.paint {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  display: flex;
+  width: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 5vh;
+  box-sizing: border-box;
+}
+
+#icons-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#icons-box svg {
+  padding: 50% 0% 50% 0%;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+#icons-box svg:hover {
+  cursor: pointer;
+  fill: rgb(228, 151, 56);
+  top: -3px;
+}
+
+.paint {
+  right: 0;
+  align-items: flex-start;
+}
+
+.paint svg {
+  transition: 0.3s;
+}
+
+.paint svg:hover {
+  cursor: pointer;
+  fill: rgb(228, 151, 56);
+}
+
+/* ------------------------common------------------------ */
+
+.about-title,
+.work-title,
+.resume-title,
+.contact-title {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.8vw;
+  letter-spacing: 2px;
+  padding-bottom: 3%;
+}
+
+.about,
+.all-work,
+.resume,
+.contact {
+  padding: 4% 0% 4% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-details,
+.gym-app-img,
+.app-description,
+.app-img-view,
+.app-img-view-sdc,
+.resume-details,
+.contact-form {
+  width: 45%;
+}
+
+/* ------------------------about------------------------ */
+
+.about {
+  background-color: rgb(196, 196, 196);
+}
+
+.about-details {
+  display: flex;
+  flex-direction: row;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30%;
+  border-radius: 2px;
+}
+
+.about-text {
+  box-sizing: border-box;
+  padding: 0% 2% 1% 2%;
+  width: 70%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7vw;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.about-text p {
+  margin-bottom: 1%;
+}
+
+/* ------------------------work------------------------ */
+
+.all-work {
+  background-color: rgb(226, 226, 226);
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.app-img-view,
+.app-img-view-sdc {
+  background-color: rgb(43, 191, 102);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-img-view-sdc {
+  background-color: rgb(211, 135, 42);
+  padding: 1% 0% 1% 0%;
+  box-sizing: border-box;
+}
+
+.app-img {
+  width: 90%;
+}
+
+.app-img-sdc {
+  width: 60%;
+}
+
+.app-img-text {
+  font-family: "Open Sans", sans-serif;
+  height: 5%;
+  font-size: 0.7vw;
+  -webkit-font-smoothing: antialiased;
+  color: whitesmoke;
+  padding-bottom: 0.5%;
+}
+
+.app-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6vw;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.5px;
+  line-height: 2em;
+  background-color: rgb(236, 236, 236);
+  padding: 1%;
+  box-sizing: border-box;
+  color: rgb(56, 56, 56);
+  font-weight: 300;
+  margin-bottom: 3%;
+}
+
+.all-work {
+  padding-bottom: 1%;
+}
+
+.work-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.view-repo,
+.visit-site {
+  border-color: rgb(104, 129, 230);
+  border-width: 0.5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 1.5%;
+  margin-right: 1%;
+}
+
+.visit-site {
+  border-color: rgb(111, 207, 84);
+}
+
+.view-repo:hover,
+.visit-site:hover {
+  cursor: pointer;
+  background-color: rgb(228, 151, 56);
+  color: whitesmoke;
+  transition: 0.3s;
+  border-color: transparent;
+  border-width: 0.5px;
+}
+
+/* ------------------------resume------------------------ */
+
+.resume {
+  background-color: rgb(176, 176, 176);
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+.resume-details {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.education-title,
+.skills-title,
+.applications-title,
+.experience-title,
+.others-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.6vw;
+  letter-spacing: 0.2em;
+  padding-top: 3%;
+}
+
+hr {
+  border-color: rgb(156, 156, 156);
+  border-width: 0.2px;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+}
+
+.education,
+.skills,
+.applications,
+.experience,
+.others {
+  padding: 0% 1% 0% 1%;
+  font-size: 0.6vw;
+}
+
+#college-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1%;
+  font-weight: 400;
+}
+
+#college-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1.5%;
+}
+
+.skills-title,
+.experience-title,
+.others-title {
+  padding-top: 1.5%;
+}
+
+.skills,
+.applications,
+.experience,
+.others {
+  line-height: 1.7em;
+}
+
+.my-app,
+.job {
+  padding-bottom: 1.5%;
+}
+
+.app-title,
+.role-duration,
+.job-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-summary,
+.role-duration {
+  font-style: italic;
+}
+
+.app-details,
+.job-details {
+  padding: 0.7% 0.5% 0% 0.5%;
+}
+
+.roles {
+  line-height: 1.3em;
+}
+
+#download-btn {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-size: 0.6vw;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 18px 10px 18px;
+  border: solid #000;
+  border-width: 0.5px;
+}
+
+#download-btn:hover {
+  border: solid transparent;
+  border-width: 0.5px;
+  cursor: pointer;
+  background-color: rgb(228, 151, 56);
+  transition: 0.3s;
+  color: rgb(206, 206, 206);
+}
+
+/* ------------------------contact------------------------ */
+
+.contact {
+  padding-bottom: 12%;
+  background-color: rgb(96, 96, 96);
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+.contact-message {
+  font-size: 0.7vw;
+  text-align: center;
+  padding: 0% 4% 2% 4%;
+  line-height: 1.5em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-input,
+#email-input,
+#message-input {
+  width: 50%;
+  font-size: 0.6vw;
+  padding: 1%;
+  border-radius: 5px;
+  border: none;
+}
+
+#message-input {
+  resize: none;
+}
+
+.contact-form div {
+  padding-top: 1.5%;
+  width: 100%;
+  text-align: center;
+}
+
+.send-btn {
+  margin-top: 5%;
+  padding: 10px 18px 10px 18px;
+  background-color: transparent;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  background-color: rgb(228, 151, 56);
+  transition: 0.5s;
+  color: rgb(96, 96, 96);
+  border-color: transparent;
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  outline: none;
+}

@@ -1,0 +1,60 @@
+@media only screen and (max-width: 2300px) {
+
+  #name {
+    font-size: 70px;
+  }
+  
+  #role {
+    font-size: 23px;
+  }
+
+  .tabs {
+    font-size: 18px;
+    width: 550px;
+  }
+
+  .about-title, .work-title, .resume-title, .contact-title {
+    font-size: 18.4px;
+  }
+
+  .about-details, .gym-app-img, .app-description, .app-img-view, .app-img-view-sdc, .resume-details, .contact-form {
+    width: 1035px;
+  }
+
+  .about-text {
+    font-size: 16.1px;
+    line-height: 25px;
+  }
+
+  .app-img-text, .contact-message {
+    font-size: 16.1px;
+  }
+
+  .app-description, .education-title, .skills-title, .applications-title, .experience-title, .others-title, .education, .skills, .applications, .experience, .others {
+    font-size: 13.8px;
+  }
+
+  #download-btn, #name-input, #email-input, #message-input  {
+    font-size: 13.8px;
+  }
+
+  .nav {
+    padding: 30px 0px 30px 0px;
+  }
+
+}
+
+@media only screen and (max-width: 1700px) {
+  
+  #loading-text {
+    font-size: 35px;
+    padding: 0% 0% 20px 0%;
+  }
+
+  #loader {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+}

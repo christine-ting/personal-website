@@ -1,50 +1,45 @@
 {
-  "name": "personalwebsite",
-  "version": "1.0.0",
-  "description": "Christine's personal website",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack -d -w",
-    "start": "nodemon ./server/index.js",
-    "seed": "node ./database/seed.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/christine-ting/personal-website.git"
-  },
-  "author": "Christine Ting",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/christine-ting/personal-website/issues"
-  },
-  "homepage": "https://github.com/christine-ting/personal-website#readme",
+  "name": "personal-website-2.0",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "aws-sdk": "^2.678.0",
-    "axios": "^0.19.2",
-    "babel-eslint": "^10.1.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.0.0",
-    "express": "^4.17.1",
-    "jquery": "^3.5.1",
-    "mongoose": "^5.9.13",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.4.6",
-    "nodemon": "^2.0.3",
-    "path": "^0.12.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-loader-spinner": "^3.1.14"
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "jquery": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
-    "babel-loader": "^8.1.0",
-    "eslint-config-hackreactor": "github:reactorcore/eslint-config-hackreactor",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && firebase deploy --only hosting"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
