@@ -98,6 +98,7 @@
 
   .contact-form, #name-input, #email-input, #message-input {
     width: 90%;
+    padding: 1.5%;
   }
 
   .contact-form div {

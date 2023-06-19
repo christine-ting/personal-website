@@ -254,8 +254,8 @@
 
 .about-text {
   box-sizing: border-box;
-  padding: 0% 2% 1% 2%;
-  width: 70%;
+  padding: 0% 2% 1% 4%;
+  width: 50%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.7vw;
   line-height: 1.5em;
@@ -263,7 +263,7 @@
 }
 
 .about-text p {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 /* ------------------------work------------------------ */

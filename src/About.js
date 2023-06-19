@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-text">
           <p>
             Hello! I'm Christine, an enthusiastic full-stack software engineer
-            based in Los Angeles, California.
+            based in Los Angeles, California ☀️.
           </p>
           <p>
             Software design and development have always been my biggest passion,
