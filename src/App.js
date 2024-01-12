@@ -12,7 +12,7 @@ const App = () => {
   const [filter, changeFilter] = useState("brightness(100%) grayscale(1)");
   const [color, setColor] = useState(false);
   const [navBottom, setNavBottom] = useState(0);
-  const [backgroundColor, changeBackgroundColor] = useState('rgba(0, 0, 0, 0.305)')
+  const [backgroundColor, changeBackgroundColor] = useState('rgba(0, 0, 0, 0.5)')
 
   const setStickyHeader = () => {
     const header = document.getElementById("my-header");
@@ -39,10 +39,10 @@ const App = () => {
     setColor(!color);
     if (!color) {
       changeFilter("brightness(100%)");
-      changeBackgroundColor('rgba(55, 30, 8, 0.345)')
+      changeBackgroundColor('rgba(55, 30, 8, 0.5)')
     } else {
       changeFilter("brightness(100%) grayscale(1)");
-      changeBackgroundColor('rgba(0, 0, 0, 0.305)')
+      changeBackgroundColor('rgba(0, 0, 0, 0.5)')
     }
   };
 
