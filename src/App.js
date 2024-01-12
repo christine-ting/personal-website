@@ -12,6 +12,7 @@ const App = () => {
   const [filter, changeFilter] = useState("brightness(100%) grayscale(1)");
   const [color, setColor] = useState(false);
   const [navBottom, setNavBottom] = useState(0);
+  const [backgroundColor, changeBackgroundColor] = useState('rgba(0, 0, 0, 0.305)')
 
   const setStickyHeader = () => {
     const header = document.getElementById("my-header");
@@ -38,8 +39,10 @@ const App = () => {
     setColor(!color);
     if (!color) {
       changeFilter("brightness(100%)");
+      changeBackgroundColor('rgba(55, 30, 8, 0.345)')
     } else {
       changeFilter("brightness(100%) grayscale(1)");
+      changeBackgroundColor('rgba(0, 0, 0, 0.305)')
     }
   };
 
@@ -56,9 +59,9 @@ const App = () => {
   return (
     <div className="main-view">
       <div className="top-image" style={{ filter }} />
-      <div className="title-top">
-        <div id="name">CHRISTINE TING</div>
-        <div id="role">Software Engineer & Founder of</div>
+      <div className="title-top" style={{backgroundColor}}>
+        <div id="name">ERIC WEINER</div>
+        <div id="role">Software Engineer @</div>
         <div
           className="atini-logo"
           onClick={() => window.open("https://atinistudio.com/", "_blank")}

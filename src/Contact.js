@@ -40,7 +40,7 @@ const Contact = () => {
     <div className="contact">
       <div className="contact-title">CONTACT</div>
       <div className="contact-message">
-        Drop me an email at <a href="mailto:christineting.an@gmail.com">christineting.an@gmail.com </a>or simply fill out the
+        Simply fill out the
         form below and I will reply to you soon!
       </div>
       <div className="contact-form">

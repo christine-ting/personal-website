@@ -11,25 +11,17 @@ const About = () => {
         <img className="profile-pic" src={profilePic} />
         <div className="about-text">
           <p>
-            Hello! I'm Christine, an enthusiastic full-stack software engineer
-            based in Los Angeles, California ☀️.
+            Hello! I'm Eric Weiner a dedicated full-stack software engineer from New Jersey, specializing in bringing life to designs and wire-frames with a strong focus on user experience.
           </p>
           <p>
-            Software design and development have always been my biggest passion,
-            because of its ability to transform idea into reality with the
-            essence of efficiency! I particularly find it purposeful therefore
-            enjoyable when learning and building with different brains as a team
-            towards a shared vision.
+            My passion lies in crafting accessible and intuitive web interfaces, making technology enjoyable for users of all skill levels.
+            I strongly believe in the power of teamwork and diverse perspectives, especially when it comes to perfecting UI/UX. This collaborative spirit helps us uncover and address potential issues, ensuring a seamless experience for the end-user.
           </p>
           <p>
-            With the belief that only magic can surpass technology, I am eager
-            to use my technological skills and creativity to provide
-            service/product to fill in the gaps in this society and make this
-            world a better place.
+            When I'm not coding, I'm an avid online chess player and an outdoor enthusiast who enjoys snowboarding, hiking, and golf. These hobbies not only offer me a refreshing break but also fuel my creativity and problem-solving skills in the tech world.
           </p>
           <p>
-            Feel free to reach out to me on social media or send me an email.
-            I'd love to talk about anything from work to life!
+            If you're interested in collaborating or simply want to exchange thoughts on technology, life, or chess strategies, feel free to reach out via email. I'm always open to new ideas and connections in the software engineering community.
           </p>
         </div>
       </div>
